@@ -3,12 +3,20 @@ import type { AWS } from '@serverless/typescript';
 import hello from '@functions/hello';
 
 const serverlessConfiguration: AWS = {
-  service: 'aws-nodejs-typescript',
+  service: 'serverless-dataset-manager-api',
   frameworkVersion: '3',
   plugins: ['serverless-esbuild'],
   provider: {
     name: 'aws',
+    stage: 'dev',
+    region: 'eu-central-1',
     runtime: 'nodejs14.x',
+    tags: {
+      project: 'serverless-dataset-manager-api',
+    },
+    logs: {
+      httpApi: true,
+    },
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,
