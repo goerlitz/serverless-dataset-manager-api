@@ -24,17 +24,6 @@ An API to manage datasets in the AWS cloud.
 - [Choosing between REST APIs and HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html)
 - Basic [Request Validation](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-method-request-validation.html)
 
-## Genesis
-
-This project has been generated using the `aws-nodejs-typescript` template from the [Serverless framework](https://www.serverless.com/).
-
-- `serverless create --template aws-nodejs-typescript --path aws-serverless-typescript-api`
-- `npm install @middy/validator`
-- `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint`
-- `npm install --save-dev serverless-offline serverless-dynamodb-local`
-- `eslint --init` (airbnb)
-- `npm install -D eslint-config-airbnb-typescript` (https://stackoverflow.com/questions/59265981/typescript-eslint-missing-file-extension-ts-import-extensions)
-- Install eslint plugin in VS Code (or run on commant line: `npx eslint "src/**"` - quotes are important)
 
 ## Installation/deployment instructions
 

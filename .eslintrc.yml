@@ -4,6 +4,7 @@ env:
 extends:
   - airbnb-base
   - airbnb-typescript/base
+  - prettier
 parser: '@typescript-eslint/parser'
 parserOptions:
   project: ./tsconfig.json
@@ -12,7 +13,7 @@ parserOptions:
 plugins:
   - '@typescript-eslint'
 rules: {}
-settings:
-  import/resolver:
-    typescript:
-      alwaysTryTypes: true
+# settings:
+#   import/resolver:
+#     typescript:
+#       alwaysTryTypes: true
